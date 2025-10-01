@@ -1,3 +1,24 @@
 
 rm -rf LECTURES
 rm -rf WORKSPACE
+git add .
+git commit -m "finished exercises"
+git push
+touch grade_workshop.sh
+mkdir ref_output
+cd ref_output/
+touch workshop2b_part1.txt
+touch workshop2b_part2.txt
+touch workshop2b_part3.txt
+touch workshop2b_part4.txt
+touch workshop2b_part5.txt
+git add .
+git commit -m "added ref_outputs and grading script"
+git push
+cd ..
+touch workshop2b_part1.py
+touch workshop2b_part2.py
+touch workshop2b_part3.py
+touch workshop2b_part4.py
+touch workshop2b_part5.py
+bash grade_workshop.sh 
